@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title Meta -->
+    <meta charset="utf-8" />
+    <title>ATIS | Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fully responsive ATIS admin panel" />
+    <meta name="suraj jamdade" content="ATIS" />
+    <meta name="keywords" content="ATIS" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+
+    <!-- Vendor css (Require in all Page) -->
+    <link href="assets/css/vendor.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Icons css (Require in all Page) -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- App css (Require in all Page) -->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Theme Config js (Require in all Page) -->
+    <script src="assets/js/config.js"></script>
+    <link
+      href="https://unpkg.com/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- START Wrapper -->
+    <div class="wrapper">
+      <!-- ========== Top-bar Start ========== -->
+      <header class="topbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="d-flex align-items-center">
+              <!-- Menu Toggle Button -->
+              <div class="topbar-item">
+                <button type="button" class="button-toggle-menu me-2">
+                  <iconify-icon
+                    icon="solar:hamburger-menu-broken"
+                    class="fs-24 align-middle"
+                  ></iconify-icon>
+                </button>
+              </div>
+
+              <!-- Menu Toggle Button -->
+              <div class="topbar-item">
+                <h4 class="fw-bold topbar-button pe-none text-uppercase mb-0">
+                  Welcome To AL THARWANEYA INTEGRATED SOLUTIONS!
+                </h4>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-1">
+              <!-- User -->
+              <div class="dropdown topbar-item">
+                <a
+                  type="button"
+                  class="topbar-button"
+                  id="page-header-user-dropdown"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="d-flex align-items-center">
+                    <img
+                      class="rounded-circle"
+                      width="32"
+                      src="assets/images/logo.png"
+                      alt="avatar-3"
+                    />
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <!-- item-->
+                  <h6 class="dropdown-header">Welcome ATIS!</h6>
+                  <a class="dropdown-item" href="profile.html">
+                    <i
+                      class="bx bx-user-circle text-muted fs-18 align-middle me-1"
+                    ></i
+                    ><span class="align-middle">Profile</span>
+                  </a>
+
+                  <div class="dropdown-divider my-1"></div>
+
+                  <a class="dropdown-item text-danger" href="auth-signin.html">
+                    <i class="bx bx-log-out fs-18 align-middle me-1"></i
+                    ><span class="align-middle">Logout</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ========== App Menu Start ========== -->
+      <div class="main-nav">
+        <!-- Sidebar Logo -->
+        <div class="logo-box">
+          <a href="index.html" class="logo-light">
+            <img
+              src="assets/images/logo.png"
+              class="logo-lg"
+              alt="logo light"
+              style="width: 80px; height: 80px"
+            />
+          </a>
+        </div>
+
+        <!-- Menu Toggle Button (sm-hover) -->
+        <button
+          type="button"
+          class="button-sm-hover"
+          aria-label="Show Full Sidebar"
+        >
+          <iconify-icon
+            icon="solar:double-alt-arrow-right-bold-duotone"
+            class="button-sm-hover-icon"
+          ></iconify-icon>
+        </button>
+
+        <div class="scrollbar" data-simplebar>
+          <ul class="navbar-nav" id="navbar-nav">
+            <li class="menu-title">General</li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="nav-icon">
+                  <iconify-icon
+                    icon="solar:widget-5-bold-duotone"
+                  ></iconify-icon>
+                </span>
+                <span class="nav-text"> Dashboard </span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link menu-arrow active"
+                href="#sidebarCategory"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="true"
+                aria-controls="sidebarCategory"
+              >
+                <span class="nav-icon">
+                  <iconify-icon
+                    icon="solar:clipboard-list-bold-duotone"
+                  ></iconify-icon>
+                </span>
+                <span class="nav-text active"> Web Pages </span>
+              </a>
+              <div class="collapse show" id="sidebarCategory">
+                <ul class="nav sub-navbar-nav">
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link active" href="home-banner.html"
+                      >Home Banner</a
+                    >
+                  </li>
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="counter.html">Counter</a>
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="about-us.html">About Us</a>
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="why-choose-us.html"
+                      >Why Choose Us</a
+                    >
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="services.html">Services</a>
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="faq.html">FAQ's</a>
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="portfolio-category.html"
+                      >Portfolio Category</a
+                    >
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="portfolio-list.html"
+                      >Portfolio List</a
+                    >
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="brands.html">Brands</a>
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="partners.html">Partners</a>
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="teams.html">Teams</a>
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="technologies.html"
+                      >Technologies</a
+                    >
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="testimonials.html"
+                      >Testimonials</a
+                    >
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="blog-lits.html">Blog List</a>
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="job-post.html">Job Post</a>
+                  </li>
+
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="privacy-policy.html"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="terms-conditions.html"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="enquiry-list.html">
+                <span class="nav-icon">
+                  <iconify-icon
+                    icon="solar:users-group-two-rounded-bold-duotone"
+                  ></iconify-icon>
+                </span>
+                <span class="nav-text"> Enquiry List </span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="job-apply-list.html">
+                <span class="nav-icon">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </span>
+                <span class="nav-text"> Job Apply List </span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="settings.html">
+                <span class="nav-icon">
+                  <iconify-icon
+                    icon="solar:settings-bold-duotone"
+                  ></iconify-icon>
+                </span>
+                <span class="nav-text"> General Settings </span>
+              </a>
+            </li>
+
+            <li class="menu-title mt-2">Users</li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">
+                <span class="nav-icon">
+                  <iconify-icon
+                    icon="solar:chat-square-like-bold-duotone"
+                  ></iconify-icon>
+                </span>
+                <span class="nav-text"> Profile </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ========== App Menu End ========== -->
+
+      <div class="page-content">
+        <!-- Start Container Fluid -->
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Home Banner</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="mb-3">
+                        <label for="title" class="form-label">Title </label>
+                        <input
+                          type="text"
+                          id="title"
+                          class="form-control"
+                          placeholder=""
+                          value="AL THARWANEYA INTEGRATED SOLUTIONS"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="mb-3">
+                        <label for="description" class="form-label">
+                          Description</label
+                        >
+                        <textarea
+                          class="form-control bg-light-subtle"
+                          id="description"
+                          rows="7"
+                          placeholder="ALTHARWANEYA INTEGRATED SOLUTIONS, established in 2020, is a leading provider of innovative IT solutions, driving digital transformation and empowering businesses across various industries."
+                          value=""
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                        <label for="img" class="form-label">Banner </label>
+                        <input
+                          type="file"
+                          id="img"
+                          class="form-control"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                        <label for="img" class="form-label"
+                          >Intro Video URL
+                        </label>
+                        <input
+                          type="url"
+                          id="img"
+                          class="form-control"
+                          placeholder="https://"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">SEO</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="mb-3">
+                        <label for="title" class="form-label"
+                          >Meta Title
+                        </label>
+                        <input
+                          type="text"
+                          id="title"
+                          class="form-control"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="mb-3">
+                        <label for="description" class="form-label"
+                          >Meta Description</label
+                        >
+                        <textarea
+                          class="form-control bg-light-subtle"
+                          id="description"
+                          rows="4"
+                          placeholder=" "
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="mb-3">
+                        <label for="product-stock" class="form-label"
+                          >Tag</label
+                        >
+                        <!-- Hidden Select Element -->
+                        <select
+                          class="form-control"
+                          id="choices-multiple-remove-button"
+                          data-choices
+                          data-choices-removeitem
+                          name="choices-multiple-remove-button"
+                          multiple
+                        >
+                          <option value="web">Web</option>
+                          <option value="ui">UI</option>
+                          <option value="ux">UX</option>
+                          <option value="app">App Development</option>
+                          <option value="Android">Android</option>
+                          <option value="ios">IOS</option>
+                          <option value="Sass">Sass</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 bg-light mb-3 rounded">
+                <div class="row justify-content-end g-2">
+                  <div class="col-lg-2">
+                    <a href="#!" class="btn btn-primary w-100">
+                      <i class="bx bx-save"></i> Submit</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Container Fluid -->
+
+        <!-- ========== Footer Start ========== -->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 text-center">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                &copy; All Rights Reserved. Design & Developed by
+
+                <a href="#" class="fw-bold footer-text" target="_blank"
+                  >AL THARWANEYA INTEGRATED SOLUTIONS!</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- ========== Footer End ========== -->
+      </div>
+    </div>
+    <!-- END Wrapper -->
+
+    <!-- Vendor Javascript (Require in all Page) -->
+    <script src="assets/js/vendor.js"></script>
+
+    <!-- App Javascript (Require in all Page) -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Vector Map Js -->
+    <script src="assets/vendor/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="assets/vendor/jsvectormap/maps/world-merc.js"></script>
+    <script src="assets/vendor/jsvectormap/maps/world.js"></script>
+
+    <!-- Dashboard Js -->
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  </body>
+</html>
