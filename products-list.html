@@ -200,7 +200,7 @@
                     >
                   </li>
                   <li class="sub-nav-item">
-                    <a class="sub-nav-link" href="products-list.html"
+                    <a class="sub-nav-link active" href="products-list.html"
                       >Products List</a
                     >
                   </li>
@@ -238,7 +238,7 @@
                   </li>
 
                   <li class="sub-nav-item">
-                    <a class="sub-nav-link active" href="privacy-policy.html"
+                    <a class="sub-nav-link" href="privacy-policy.html"
                       >Privacy Policy</a
                     >
                   </li>
@@ -303,109 +303,134 @@
         <!-- Start Container Fluid -->
         <div class="container-xxl">
           <div class="row">
-            <div class="col-xl-12 col-lg-12">
+            <div class="col-xl-12">
               <div class="card">
-                <div class="card-header">
-                  <h4 class="card-title">Privacy Policy</h4>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="mb-3">
-                        <label for="title" class="form-label">Title </label>
-                        <input
-                          type="text"
-                          id="title"
-                          class="form-control"
-                          placeholder=""
-                        />
-                      </div>
-                    </div>
+                <div
+                  class="card-header d-flex justify-content-between align-items-center gap-1"
+                >
+                  <h4 class="card-title flex-grow-1">Products List</h4>
 
-                    <div class="col-lg-12">
-                      <div class="mb-3">
-                        <label for="description" class="form-label">
-                          Description</label
-                        >
-                        <textarea
-                          class="form-control bg-light-subtle"
-                          id="description"
-                          rows="7"
-                          placeholder=" description"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addTeamsModal"
+                    class="btn btn-sm btn-primary"
+                  >
+                    Add
+                  </a>
                 </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header">
-                  <h4 class="card-title">SEO</h4>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="mb-3">
-                        <label for="title" class="form-label"
-                          >Meta Title
-                        </label>
-                        <input
-                          type="text"
-                          id="title"
-                          class="form-control"
-                          placeholder=""
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="mb-3">
-                        <label for="description" class="form-label"
-                          >Meta Description</label
-                        >
-                        <textarea
-                          class="form-control bg-light-subtle"
-                          id="description"
-                          rows="4"
-                          placeholder=" "
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="mb-3">
-                        <label for="product-stock" class="form-label"
-                          >Tag</label
-                        >
-                        <!-- Hidden Select Element -->
-                        <select
-                          class="form-control"
-                          id="choices-multiple-remove-button"
-                          data-choices
-                          data-choices-removeitem
-                          name="choices-multiple-remove-button"
-                          multiple
-                        >
-                          <option value="web">Web</option>
-                          <option value="ui">UI</option>
-                          <option value="ux">UX</option>
-                          <option value="app">App Development</option>
-                          <option value="Android">Android</option>
-                          <option value="ios">IOS</option>
-                          <option value="Sass">Sass</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="p-3 bg-light mb-3 rounded">
-                <div class="row justify-content-end g-2">
-                  <div class="col-lg-2">
-                    <a href="#!" class="btn btn-primary w-100"
-                      ><i class="bx bx-save"></i> Submit</a
+                <div>
+                  <div class="table-responsive">
+                    <table
+                      class="table align-middle mb-0 table-hover table-centered table-bordered"
                     >
+                      <thead class="bg-light-subtle">
+                        <tr>
+                          <th style="width: 20px">
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="customCheck1"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="customCheck1"
+                              ></label>
+                            </div>
+                          </th>
+                          <th>Image</th>
+                          <th>Product Name</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="customCheck2"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="customCheck2"
+                              ></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div style="width: 80px; height: 80px">
+                              <img
+                                src="assets/images/p2.jpg"
+                                alt="img"
+                                style="
+                                  width: 100%;
+                                  height: 100%;
+                                  object-fit: contain;
+                                "
+                              />
+                            </div>
+                          </td>
+                          <td>
+                            <p>POS System</p>
+                          </td>
+
+                          <td>
+                            <div class="badge rounded-pill bg-success">
+                              Active
+                            </div>
+                          </td>
+
+                          <td>
+                            <div class="d-flex gap-2">
+                              <a
+                                href="#"
+                                class="btn btn-soft-primary btn-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#editTeamsModal"
+                                ><iconify-icon
+                                  icon="solar:pen-2-broken"
+                                  class="align-middle fs-18"
+                                ></iconify-icon
+                              ></a>
+                              <a href="#!" class="btn btn-soft-danger btn-sm"
+                                ><iconify-icon
+                                  icon="solar:trash-bin-minimalistic-2-broken"
+                                  class="align-middle fs-18"
+                                ></iconify-icon
+                              ></a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
+                  <!-- end table-responsive -->
+                </div>
+                <div class="card-footer border-top">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end mb-0">
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0);"
+                          >Previous</a
+                        >
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="javascript:void(0);">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0);">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0);">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0);">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -435,6 +460,180 @@
     </div>
     <!-- END Wrapper -->
 
+    <!-- add modal -->
+    <div
+      class="modal fade"
+      id="addTeamsModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Add Products
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Image</label>
+                <input type="file" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >product Name</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Banner 1</label
+                >
+                <input type="file" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Banner 2
+                </label>
+                <input type="file" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Banner 3</label
+                >
+                <input type="file" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Description</label
+                >
+                <textarea
+                  name=""
+                  id=""
+                  class="form-control"
+                  rows="7"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="" class="col-form-label">Status:</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Active</option>
+                  <option value="1">Inactive</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  <i class="bx bx-save"></i> Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edit modal -->
+    <div
+      class="modal fade"
+      id="editTeamsModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Edit Products
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Image</label>
+                <input type="file" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >product Name</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Banner 1</label
+                >
+                <input type="file" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Banner 2
+                </label>
+                <input type="file" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Banner 3</label
+                >
+                <input type="file" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Description</label
+                >
+                <textarea
+                  name=""
+                  id=""
+                  class="form-control"
+                  rows="7"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="" class="col-form-label">Status:</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Active</option>
+                  <option value="1">Inactive</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  <i class="bx bx-save"></i> Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Vendor Javascript (Require in all Page) -->
     <script src="assets/js/vendor.js"></script>
 
@@ -448,7 +647,5 @@
 
     <!-- Dashboard Js -->
     <script src="assets/js/pages/dashboard.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   </body>
 </html>
